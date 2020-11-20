@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		17ADD66A2568299C00CEB810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ADD6692568299C00CEB810 /* AppDelegate.swift */; };
 		17ADD66C2568299C00CEB810 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ADD66B2568299C00CEB810 /* SceneDelegate.swift */; };
-		17ADD66E2568299C00CEB810 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ADD66D2568299C00CEB810 /* ViewController.swift */; };
-		17ADD6712568299C00CEB810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17ADD66F2568299C00CEB810 /* Main.storyboard */; };
+		17ADD66E2568299C00CEB810 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ADD66D2568299C00CEB810 /* HomeViewController.swift */; };
+		17ADD6712568299C00CEB810 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17ADD66F2568299C00CEB810 /* Home.storyboard */; };
 		17ADD6732568299D00CEB810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17ADD6722568299D00CEB810 /* Assets.xcassets */; };
 		17ADD6762568299D00CEB810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17ADD6742568299D00CEB810 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +19,8 @@
 		17ADD6662568299C00CEB810 /* VoiceRecognitionIniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceRecognitionIniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17ADD6692568299C00CEB810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17ADD66B2568299C00CEB810 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		17ADD66D2568299C00CEB810 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		17ADD6702568299C00CEB810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17ADD66D2568299C00CEB810 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		17ADD6702568299C00CEB810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		17ADD6722568299D00CEB810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17ADD6752568299D00CEB810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17ADD6772568299D00CEB810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +56,95 @@
 		17ADD6682568299C00CEB810 /* VoiceRecognitionIniOS */ = {
 			isa = PBXGroup;
 			children = (
-				17ADD6692568299C00CEB810 /* AppDelegate.swift */,
-				17ADD66B2568299C00CEB810 /* SceneDelegate.swift */,
-				17ADD66D2568299C00CEB810 /* ViewController.swift */,
-				17ADD66F2568299C00CEB810 /* Main.storyboard */,
-				17ADD6722568299D00CEB810 /* Assets.xcassets */,
-				17ADD6742568299D00CEB810 /* LaunchScreen.storyboard */,
-				17ADD6772568299D00CEB810 /* Info.plist */,
+				17EE8B8F256833D50077E8A5 /* Home */,
+				17EE8B8A2568334A0077E8A5 /* Global */,
 			);
 			path = VoiceRecognitionIniOS;
+			sourceTree = "<group>";
+		};
+		17EE8B8A2568334A0077E8A5 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				17EE8B8E256833650077E8A5 /* Model */,
+				17EE8B8D256833600077E8A5 /* View */,
+				17EE8B8C256833580077E8A5 /* Controller */,
+				17EE8B8B256833530077E8A5 /* Service */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		17EE8B8B256833530077E8A5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				17ADD6772568299D00CEB810 /* Info.plist */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		17EE8B8C256833580077E8A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17ADD6692568299C00CEB810 /* AppDelegate.swift */,
+				17ADD66B2568299C00CEB810 /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17EE8B8D256833600077E8A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17ADD6722568299D00CEB810 /* Assets.xcassets */,
+				17ADD6742568299D00CEB810 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17EE8B8E256833650077E8A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17EE8B8F256833D50077E8A5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				17EE8B93256833EB0077E8A5 /* Model */,
+				17EE8B92256833E70077E8A5 /* View */,
+				17EE8B91256833E10077E8A5 /* Controller */,
+				17EE8B90256833DC0077E8A5 /* Service */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		17EE8B90256833DC0077E8A5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		17EE8B91256833E10077E8A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17ADD66D2568299C00CEB810 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17EE8B92256833E70077E8A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17ADD66F2568299C00CEB810 /* Home.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17EE8B93256833EB0077E8A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +206,7 @@
 			files = (
 				17ADD6762568299D00CEB810 /* LaunchScreen.storyboard in Resources */,
 				17ADD6732568299D00CEB810 /* Assets.xcassets in Resources */,
-				17ADD6712568299C00CEB810 /* Main.storyboard in Resources */,
+				17ADD6712568299C00CEB810 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17ADD66E2568299C00CEB810 /* ViewController.swift in Sources */,
+				17ADD66E2568299C00CEB810 /* HomeViewController.swift in Sources */,
 				17ADD66A2568299C00CEB810 /* AppDelegate.swift in Sources */,
 				17ADD66C2568299C00CEB810 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,12 +226,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		17ADD66F2568299C00CEB810 /* Main.storyboard */ = {
+		17ADD66F2568299C00CEB810 /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				17ADD6702568299C00CEB810 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		17ADD6742568299D00CEB810 /* LaunchScreen.storyboard */ = {
@@ -288,7 +368,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7X48R5E6LJ;
-				INFOPLIST_FILE = VoiceRecognitionIniOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VoiceRecognitionIniOS/Global/Service/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7X48R5E6LJ;
-				INFOPLIST_FILE = VoiceRecognitionIniOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VoiceRecognitionIniOS/Global/Service/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
