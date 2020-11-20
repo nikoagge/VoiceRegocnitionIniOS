@@ -13,9 +13,12 @@
 		17ADD6712568299C00CEB810 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17ADD66F2568299C00CEB810 /* Home.storyboard */; };
 		17ADD6732568299D00CEB810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17ADD6722568299D00CEB810 /* Assets.xcassets */; };
 		17ADD6762568299D00CEB810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17ADD6742568299D00CEB810 /* LaunchScreen.storyboard */; };
+		17EE8B99256836520077E8A5 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE8B98256836520077E8A5 /* UIViewControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		175198C925687CA500985D43 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Home.strings; sourceTree = "<group>"; };
+		175198CA25687CA500985D43 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		17ADD6662568299C00CEB810 /* VoiceRecognitionIniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceRecognitionIniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17ADD6692568299C00CEB810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17ADD66B2568299C00CEB810 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		17ADD6722568299D00CEB810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17ADD6752568299D00CEB810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17ADD6772568299D00CEB810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17EE8B98256836520077E8A5 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				17ADD6772568299D00CEB810 /* Info.plist */,
+				17EE8B98256836520077E8A5 /* UIViewControllerExtensions.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			knownRegions = (
 				en,
 				Base,
+				el,
 			);
 			mainGroup = 17ADD65D2568299C00CEB810;
 			productRefGroup = 17ADD6672568299C00CEB810 /* Products */;
@@ -217,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EE8B99256836520077E8A5 /* UIViewControllerExtensions.swift in Sources */,
 				17ADD66E2568299C00CEB810 /* HomeViewController.swift in Sources */,
 				17ADD66A2568299C00CEB810 /* AppDelegate.swift in Sources */,
 				17ADD66C2568299C00CEB810 /* SceneDelegate.swift in Sources */,
@@ -230,6 +237,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				17ADD6702568299C00CEB810 /* Base */,
+				175198C925687CA500985D43 /* el */,
 			);
 			name = Home.storyboard;
 			sourceTree = "<group>";
@@ -238,6 +246,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				17ADD6752568299D00CEB810 /* Base */,
+				175198CA25687CA500985D43 /* el */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -249,6 +258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -296,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -310,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -351,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
